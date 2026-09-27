@@ -1,0 +1,12 @@
+name: call-ab-negfail
+on:
+  workflow_dispatch:
+
+jobs:
+  compute:
+    uses: flyingsquirrel0419/Action-bundle/.github/workflows/run.yml@main
+    with:
+      workload: '{"kind":"index","count":20}'
+      shards: "4"
+      reducer: "json-array"
+      command: "python3 scripts/failworker.py"
