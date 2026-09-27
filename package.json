@@ -1,0 +1,1 @@
+{"name":"caller-repo","version":"1.0.0","type":"module","scripts":{"build":"echo CALLER_MARKER_BUILD_RAN"}}

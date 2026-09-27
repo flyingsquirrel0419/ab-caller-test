@@ -1,0 +1,10 @@
+name: call-ab
+on:
+  workflow_dispatch:
+
+jobs:
+  compute:
+    uses: flyingsquirrel0419/Action-bundle/.github/workflows/run.yml@main
+    with:
+      workload: '{"kind":"index","count":10}'
+      shards: "2"
