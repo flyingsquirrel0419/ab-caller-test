@@ -1,0 +1,7 @@
+name: diag
+on:
+  workflow_dispatch:
+
+jobs:
+  call:
+    uses: flyingsquirrel0419/Action-bundle/.github/workflows/diag.yml@main
