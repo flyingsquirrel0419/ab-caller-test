@@ -1,0 +1,13 @@
+name: call-ab-custom
+on:
+  workflow_dispatch:
+
+jobs:
+  compute:
+    uses: flyingsquirrel0419/Action-bundle/.github/workflows/run.yml@main
+    with:
+      workload: '{"kind":"index","count":20}'
+      shards: "4"
+      reducer: "json-array"
+      command: "python3 scripts/realworker.py"
+      reduce_command: "python3 scripts/merge.py"
