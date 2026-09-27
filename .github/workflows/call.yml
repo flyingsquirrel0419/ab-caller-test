@@ -6,5 +6,7 @@ jobs:
   compute:
     uses: flyingsquirrel0419/Action-bundle/.github/workflows/run.yml@main
     with:
-      workload: '{"kind":"index","count":10}'
-      shards: "2"
+      workload: '{"kind":"index","count":20}'
+      shards: "4"
+      reducer: "json-array"
+      command: "python3 scripts/realworker.py"
